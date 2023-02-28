@@ -32,10 +32,10 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Data = new System.Windows.Forms.Label();
             this.Tarefa = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.textBox = new System.Windows.Forms.TextBox();
+            this.btnIncluir = new System.Windows.Forms.Button();
+            this.listBox = new System.Windows.Forms.ListBox();
+            this.btnRemover = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
@@ -70,41 +70,44 @@
             this.Tarefa.Text = "Tarefa";
             this.Tarefa.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // textBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(96, 79);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(244, 20);
-            this.textBox1.TabIndex = 3;
+            this.textBox.Location = new System.Drawing.Point(96, 79);
+            this.textBox.Name = "textBox";
+            this.textBox.Size = new System.Drawing.Size(244, 20);
+            this.textBox.TabIndex = 3;
+            this.textBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // button1
+            // btnIncluir
             // 
-            this.button1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(373, 52);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 29);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Incluir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnIncluir.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIncluir.Location = new System.Drawing.Point(373, 52);
+            this.btnIncluir.Name = "btnIncluir";
+            this.btnIncluir.Size = new System.Drawing.Size(75, 29);
+            this.btnIncluir.TabIndex = 4;
+            this.btnIncluir.Text = "Incluir";
+            this.btnIncluir.UseVisualStyleBackColor = true;
+            this.btnIncluir.Click += new System.EventHandler(this.button1_Click);
             // 
-            // listBox1
+            // listBox
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(32, 140);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(416, 212);
-            this.listBox1.TabIndex = 5;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listBox.FormattingEnabled = true;
+            this.listBox.Location = new System.Drawing.Point(32, 140);
+            this.listBox.Name = "listBox";
+            this.listBox.Size = new System.Drawing.Size(416, 212);
+            this.listBox.TabIndex = 5;
+            this.listBox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // button2
+            // btnRemover
             // 
-            this.button2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(373, 373);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 33);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Remover";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRemover.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemover.Location = new System.Drawing.Point(373, 373);
+            this.btnRemover.Name = "btnRemover";
+            this.btnRemover.Size = new System.Drawing.Size(75, 33);
+            this.btnRemover.TabIndex = 6;
+            this.btnRemover.Text = "Remover";
+            this.btnRemover.UseVisualStyleBackColor = true;
+            this.btnRemover.Click += new System.EventHandler(this.button2_Click);
             // 
             // toolTip1
             // 
@@ -116,10 +119,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(489, 422);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnRemover);
+            this.Controls.Add(this.listBox);
+            this.Controls.Add(this.btnIncluir);
+            this.Controls.Add(this.textBox);
             this.Controls.Add(this.Tarefa);
             this.Controls.Add(this.Data);
             this.Controls.Add(this.dateTimePicker1);
@@ -135,10 +138,10 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label Data;
         private System.Windows.Forms.Label Tarefa;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox;
+        private System.Windows.Forms.Button btnIncluir;
+        private System.Windows.Forms.ListBox listBox;
+        private System.Windows.Forms.Button btnRemover;
         private System.Windows.Forms.ToolTip toolTip1;
     }
 }
